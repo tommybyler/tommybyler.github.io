@@ -1,0 +1,213 @@
+/** {
+   border: 1px solid red !important;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  list-style-type: none;
+  position: fixed;
+  display: inline;
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  background-color: #AE9883;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+
+.logo {
+  float: left;
+  padding: 20px;
+  /*width: 100%;*/
+}
+
+.navitem {
+  float:right;
+  padding: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #4B3C2E;
+}
+
+.buttonlink>a {
+  text-decoration: none;
+  color: white;
+}
+
+.mission {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  width: 20%;
+  margin-top: 350px;
+  margin-left: 1150px;
+  padding: 20px 10px 23px 10px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  border: 2px solid white;
+}
+
+.buttonlink a {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  width: 20%;
+  font-size: 20px;
+  position: fixed;
+  display: block;
+  border: 2px solid white;
+  margin: 10px 0 0 1150px;
+  padding: 15px 10px 15px 10px;
+}
+
+.buttonlink>a:hover {
+  background-color: rgba(255,255,255,0.2)
+}
+
+.header {
+  width: 100%;
+  z-index: -3;
+}
+
+.headerimg {
+  width: 100%;
+  max-height: 1000px;
+  margin-top: -509px;
+  overflow: hidden;
+}
+
+.featured {
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  margin: 150px 0 30px 60px;
+}
+
+.shopby {
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  margin: 150px 0 60px 0;
+  text-align: center;
+}
+
+.productcard {
+  width: 340px;
+  border: 1px solid #E4D5C7;
+  border-radius: 8px;
+  margin: 0 20px 20px 60px;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.cardimg {
+  max-width: 300px;
+  overflow: hidden;
+  text-indent: -18%;
+  margin: 20px 0 0 20px;
+}
+
+.resize {
+  width: 400px;
+  height: auto;
+}
+
+.cardtext {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 5px 0px 5px 18px;
+}
+
+.cardprice {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0px 5px 18px;
+}
+
+.cardrating {
+  margin: 0 0 10px 20px;
+}
+
+.grid {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.shopbygrid {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.shoptypea {
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-indent: -10%;
+  grid-column: 2;
+}
+
+.shoptypeb {
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-indent: -15%;
+  grid-column: 3;
+}
+
+.shoptypec {
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-indent: -30%;
+  grid-column: 4;
+}
+
+.shoptypeimg {
+  width: 600px;
+  height: auto;
+}
+
+.detailgrid {
+  display: grid;
+  height: 650px;
+  width: 80%;
+  margin-left: 60px;
+  grid-template-columns: 800px auto;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 70px;
+  grid-row-gap: 30px;
+}
+
+.detaillink {
+  text-decoration: none;
+  color: black;
+}
+
+.resize2 {
+  width: 1000px;
+  height: auto;
+}
+
+.detailpic {
+  max-width: 800px;
+  overflow: hidden;
+  grid-row: 1 / 8;
+}
+
+.detailtext {
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  grid-column: 2;
+}
