@@ -1,6 +1,6 @@
 /** {
    border: 1px solid red !important;
-}*/
+}
 
 /*w3schools offered assistance with many of the concepts included!*/
 
@@ -105,11 +105,13 @@ li a {
   box-shadow: 0 3px 8px #dddddd;
 }
 
+/*img needs to float in cart but not elsewhere*/
 .cardimg {
   max-width: 300px;
   overflow: hidden;
   text-indent: -18%;
   margin: 20px 0 0 20px;
+  float: left;
 }
 
 .resize {
@@ -225,6 +227,28 @@ li a {
 }
 
 /*set style for cart item cards*/
-.cartCard {
-  grid-column-end: 2;
+.cartProductCard {
+  width: 60%;
+  grid-area: 1 / 1 / 1 / span 2;
+  border: 1px solid #E4D5C7;
+  border-radius: 8px;
+  margin: 0 20px 20px 60px;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+/*set inner grid of cart item card*/
+.cartCardInnerGrid {
+
+}
+
+.cartCardImg {
+
+}
+
+.cartCardTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 5px 0px 5px 18px;
+  float: left;
 }
