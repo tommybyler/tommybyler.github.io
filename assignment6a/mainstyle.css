@@ -271,7 +271,7 @@ li a {
 }
 
 /*set each div to its own section of grid*/
-.detailSizeChoiceA {
+#button1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -285,7 +285,7 @@ li a {
   height: 60px;
 }
 
-.detailSizeChoiceA:hover {
+#button1:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -300,7 +300,7 @@ li a {
   box-shadow: 0 3px 8px #dddddd;
 }
 
-.detailSizeChoiceB {
+#button2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -314,7 +314,7 @@ li a {
   height: 60px;
 }
 
-.detailSizeChoiceB:hover {
+#button2:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -329,7 +329,7 @@ li a {
   box-shadow: 0 3px 8px #dddddd;
 }
 
-.detailSizeChoiceC {
+#button3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -343,7 +343,7 @@ li a {
   height: 60px;
 }
 
-.detailSizeChoiceC:hover {
+#button3:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -358,7 +358,7 @@ li a {
   box-shadow: 0 3px 8px #dddddd;
 }
 
-.detailSizeChoiceD {
+#button4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
@@ -372,7 +372,7 @@ li a {
   height: 60px;
 }
 
-.detailSizeChoiceD:hover {
+#button4:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   font-size: 20px;
