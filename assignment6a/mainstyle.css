@@ -386,3 +386,17 @@ li a {
   height: 60px;
   box-shadow: 0 3px 8px #dddddd;
 }
+
+.highlightstyle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border: 2px solid #E4D5C7;
+  padding: 8px 5px 5px 5px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 3px 8px #dddddd;
+}
