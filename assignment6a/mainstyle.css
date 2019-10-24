@@ -316,9 +316,10 @@ li a {
   box-shadow: 0 3px 8px #dddddd;
 }
 
+/*set js highlight style*/
 .highlightstyle {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   border: 2px solid #E4D5C7;
   padding: 8px 5px 5px 5px;
