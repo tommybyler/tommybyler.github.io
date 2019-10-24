@@ -22,7 +22,8 @@
     <div class="cartGrid">
 
       <!--card 1-->
-      <div class="cartProductCard"><a href="details.html" class="detaillink">
+      <div class="cartProductCard">
+        <a href="details.html" class="detaillink">
         <div class="cartCardInnerGrid">
           <div class="cardimg">
             <img class="resize" src="images/catbackpack.jpg" alt="Cat in carrier">
@@ -37,6 +38,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed enim ut sem. Id consectetur purus ut faucibus pulvinar elementum integer enim neque.
           </div>
         </a>
+        <p id="card1">delete</p>
         </div>
       </div>
 
@@ -60,5 +62,17 @@
       </div>
 
     </div>
+    <script>
+    var x = document.getElementById("card1");
+
+    x.addEventListener('click', function(){
+      // alert("11111");
+        console.log(x.parentElement);
+        x.parentElement.parentElement.style.display = "none";
+    });
+
+    </script>
+  </body>
+  </html>
 
   </body>

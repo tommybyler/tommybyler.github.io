@@ -243,6 +243,11 @@ li a {
   background-color: #ffffff;
 }
 
+#card1{
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .cartCardTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -272,26 +277,24 @@ li a {
   font-size: 20px;
 }
 
-/*set buttons overall style*/
 .detailSizeGrid > div {
-  font-family: 'Open Sans', sans-serif;
-  padding: 8px 5px 5px 5px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  text-align: center;
-  width: 200px;
-  height: 60px;
-  border: 1px solid #E4D5C7;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 5px 5px 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border: 1px solid #E4D5C7;
 }
-​
-/*????
-hover is no longer working*/
+
 .detailSizeGrid > div:hover {
   border: 2px solid #E4D5C7;
   box-shadow: 0 3px 8px #dddddd;
+  cursor: pointer;
 }
 
-/*set buttons in grid*/
+/*set each div to its own section of grid*/
 #button1 {
   grid-column: 1 / span 1;
 }
@@ -308,9 +311,27 @@ hover is no longer working*/
   grid-column: 4 / span 1;
 }
 
-/*highlight styles for js*/
-.highlightbutton {
- font-weight: 700;
+.highlightbutton{
+ font-weight: 800;
  border: 2px solid #E4D5C7 !important;
  box-shadow: 0 3px 8px #dddddd;
+}
+
+.detailsButton {
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px 5px 5px 5px;
+  border-radius: 8px;
+  background-color: #d6efd9;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #B5C7B7;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.detailsButton:hover {
+  border: 2px solid #B5C7B7;
+  box-shadow: 0 3px 8px #dddddd;
+  cursor: pointer;
 }
