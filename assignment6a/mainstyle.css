@@ -284,8 +284,9 @@ li a {
   border: 1px solid #E4D5C7;
 }
 ​
-/*????*/
-.detailSizeGrid > div:hover {
+/*????
+hover is no longer working*/
+.buttons:hover {
   border: 2px solid #E4D5C7;
   box-shadow: 0 3px 8px #dddddd;
 }
@@ -307,6 +308,7 @@ li a {
   grid-column: 4 / span 1;
 }
 
+/*highlight styles for js*/
 .highlightbutton {
  font-weight: 700;
  border: 2px solid #E4D5C7 !important;
