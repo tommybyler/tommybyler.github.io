@@ -286,7 +286,7 @@ li a {
 ​
 /*????
 hover is no longer working*/
-.buttons:hover {
+.detailSizeGrid > div:hover {
   border: 2px solid #E4D5C7;
   box-shadow: 0 3px 8px #dddddd;
 }
