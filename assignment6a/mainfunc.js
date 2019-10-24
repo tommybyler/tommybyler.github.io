@@ -1,11 +1,11 @@
-function highlightButton() {
-  var tinyButton = document.getElementById("button1");
-  tinyButton.classList.remove("buttons");
-  tinyButton.classList.add("highlightstyle");
-}
-
-function unHighlight() {
-  var tinyButton = document.getElementById("button1");
-  tinyButton.classList.remove("highlightstyle");
-  tinyButton.classList.add("buttons");
-}
+var tinyButton = document.getElementById('light');
+tinyButton.addEventListener('click', function(e){
+       var nodes = tinyButton.children;
+       for(var i = 0; i < nodes.length; i++){
+           if(nodes[i].classList.contains("highlightbutton")){
+               nodes[i].className = "";
+           }
+       }
+       e.target.className = "highlightbutton";
+       console.log(e.target);
+});

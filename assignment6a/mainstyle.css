@@ -268,65 +268,47 @@ li a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1;
   grid-gap: 10px;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 /*set buttons overall style*/
-.buttons {
+.detailSizeGrid > div {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  border: 1px solid #E4D5C7;
   padding: 8px 5px 5px 5px;
   border-radius: 8px;
   background-color: #ffffff;
   text-align: center;
   width: 200px;
   height: 60px;
+  border: 1px solid #E4D5C7;
+}
+​
+/*????*/
+.detailSizeGrid > div:hover {
+  border: 2px solid #E4D5C7;
+  box-shadow: 0 3px 8px #dddddd;
 }
 
 /*set buttons in grid*/
-.buttongrid1 {
+#button1 {
   grid-column: 1 / span 1;
 }
 
-.buttongrid2 {
+#button2 {
   grid-column: 2 / span 1;
 }
 
-.buttongrid3 {
+#button3 {
   grid-column: 3 / span 1;
 }
 
-.buttongrid4 {
+#button4 {
   grid-column: 4 / span 1;
 }
 
-/*set hover style*/
-.buttons:hover {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  border: 2px solid #E4D5C7;
-  padding: 8px 5px 5px 5px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  text-align: center;
-  width: 200px;
-  height: 60px;
-  box-shadow: 0 3px 8px #dddddd;
-}
-
-/*set js highlight style*/
-.highlightstyle {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  border: 2px solid #E4D5C7;
-  padding: 8px 5px 5px 5px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  text-align: center;
-  width: 200px;
-  height: 60px;
-  box-shadow: 0 3px 8px #dddddd;
+.highlightbutton {
+ font-weight: 700;
+ border: 2px solid #E4D5C7 !important;
+ box-shadow: 0 3px 8px #dddddd;
 }
