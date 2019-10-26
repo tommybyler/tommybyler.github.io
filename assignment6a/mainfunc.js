@@ -16,7 +16,8 @@ if(tinyButton) {
 
 var colorButton = document.getElementById('colorGrid');
 
-colorButton.addEventListener('click', function(e){
+if(colorButton) {
+  colorButton.addEventListener('click', function(e){
        var nodes = colorButton.children;
        for(var i = 0; i < nodes.length; i++){
                nodes[i].className = "detailcolors"+(i+1);
@@ -25,7 +26,8 @@ colorButton.addEventListener('click', function(e){
            var x = e.target.id;
            e.target.className = "highlightcolorbutton"+x[x.length-1];
      }
-});
+   })
+ };
 
 var cartText = document.getElementById('cartButton');
 var myCartCount = document.getElementById('cartCount');
