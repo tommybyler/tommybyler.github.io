@@ -278,14 +278,14 @@ li a {
 }
 
 .detailSizeGrid > div {
-    font-family: 'Open Sans', sans-serif;
-    padding: 8px 5px 5px 5px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    text-align: center;
-    width: 200px;
-    height: 60px;
-    border: 1px solid #E4D5C7;
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px 5px 5px 5px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: 1px solid #E4D5C7;
 }
 
 .detailSizeGrid > div:hover {
@@ -334,4 +334,85 @@ li a {
   border: 2px solid #B5C7B7;
   box-shadow: 0 3px 8px #dddddd;
   cursor: pointer;
+}
+
+.detailcolorgrid {
+  display: grid;
+  height: 40px;
+  width: 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  grid-gap: 10px;
+}
+
+.detailcolors1 {
+  border-radius: 4px;
+  background-color: #40BFC1;
+  border: 1px solid #2E989A;
+}
+
+.detailcolors1:hover {
+  border: 2px solid #2E989A;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.detailcolors2 {
+  border-radius: 4px;
+  background-color: #80A1D4;
+  border: 1px solid #5F7699;
+}
+
+.detailcolors2:hover {
+  border: 2px solid #5F7699;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.detailcolors3 {
+  border-radius: 4px;
+  background-color: #FF6F5E;
+  border: 1px solid #BA4F43;
+}
+
+.detailcolors3:hover {
+  border: 2px solid #BA4F43;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.detailcolors4 {
+  border-radius: 4px;
+  background-color: #f0134d;
+  border: 1px solid #AE113A;
+}
+
+.detailcolors4:hover {
+  border: 2px solid #AE113A;
+  box-shadow: 0 3px 8px #dddddd;
+}
+
+.highlightcolorbutton1 {
+  border: 2px solid #2E989A;
+  box-shadow: 0 3px 8px #dddddd;
+  border-radius: 4px;
+  background-color: #40BFC1;
+}
+
+.highlightcolorbutton2 {
+  border: 2px solid #5F7699;
+  box-shadow: 0 3px 8px #dddddd;
+  border-radius: 4px;
+  background-color: #80A1D4;
+}
+
+.highlightcolorbutton3 {
+  border: 2px solid #BA4F43;
+  box-shadow: 0 3px 8px #dddddd;
+  border-radius: 4px;
+  background-color: #FF6F5E;
+}
+
+.highlightcolorbutton4 {
+  border: 2px solid #AE113A;
+  box-shadow: 0 3px 8px #dddddd;
+  border-radius: 4px;
+  background-color: #f0134d;
 }

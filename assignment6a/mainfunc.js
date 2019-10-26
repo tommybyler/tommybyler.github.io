@@ -12,6 +12,20 @@ tinyButton.addEventListener('click', function(e){
      }
 });
 
+var colorButton = document.getElementById('colorGrid');
+
+colorButton.addEventListener('click', function(e){
+       var nodes = colorButton.children;
+       for(var i = 0; i < nodes.length; i++){
+           if(nodes[i].classList.contains("highlightcolorbutton[i]")) {
+               nodes[i].className = "";
+           }
+       }
+       if(e.target.id === "detailcolorselect1" || e.target.id === "detailcolorselect2" || e.target.id === "detailcolorselect3" || e.target.id === "detailcolorselect4" ){
+           e.target.className = "highlightcolorbutton[i]";
+     }
+});
+
 var cartText = document.getElementById('cartButton');
 var myCartCount = document.getElementById('cartCount');
 var incrementer = 0

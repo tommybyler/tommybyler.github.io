@@ -20,6 +20,7 @@
       Dog Harness
     </div>
 
+<!--detail page grid-->
     <div class="detailgrid">
       <div class="detailpic">
         <img class="resize2" src="images/dogharness1.jpg">
@@ -56,17 +57,28 @@
         </div>
 
       </div>
-
+<!--color select-->
       <div class="detailtext">
         Colors
       </div>
 
-      <div>
-        <img src="images/colors.png">
+      <div class="detailcolorgrid" id="colorGrid">
+        <div class="detailcolors1" id="detailcolorselect1">
+        </div>
+
+        <div class="detailcolors2" id="detailcolorselect2">
+        </div>
+
+        <div class="detailcolors3" id="detailcolorselect3">
+        </div>
+
+        <div class="detailcolors4" id="detailcolorselect4">
+        </div>
       </div>
 
       <div class="detailtext">
         Qty
+        <input type="number" name="Qty" min="1" max="10">
       </div>
 
       <div class = "detailsButton" id = "cartButton" onclick="changeCartText()">
