@@ -1,5 +1,7 @@
+//set var for size grid
 var tinyButton = document.getElementById('light');
 
+//check for highlight, remove from elements, reset to selection
 if(tinyButton) {
   tinyButton.addEventListener('click', function(e){
        var nodes = tinyButton.children;
@@ -31,14 +33,31 @@ if(colorButton) {
 
 var cartText = document.getElementById('cartButton');
 var myCartCount = document.getElementById('cartCount');
-var qtyCount = parseInt(document.getElementById('qty').value, 1);
+var qtyCount = 0 //parseInt(document.getElementById('qty').value, 1);
 
-function changeCartText(){
-  if(cartText.innerHTML == 'Add to Cart') {
-    cartText.innerHTML = "Added!";
-    myCartCount.innerHTML = qtyCount;
-  }
-  else {
-    cartText.innerHTML = "Add to Cart";
+if(cartText) {
+
+  function changeCartText(){
+    if(cartText.innerHTML == 'Add to Cart') {
+      cartText.innerHTML = "Added!";
+      qtyCount++;
+      myCartCount.innerHTML = qtyCount;
+      sessionStorage.setItem("qtyCount", qtyCount);
+    }
+    else {
+      cartText.innerHTML = "Add to Cart";
+    }
   }
 }
+
+if(qtyCount > 0) {
+  myCartCount.innerHTML = sessionStorage.getItem(qtyCount);
+}
+
+var x = document.getElementById("card1");
+
+x.addEventListener('click', function(){
+  // alert("11111");
+    console.log(x.parentElement);
+    x.parentElement.parentElement.style.display = "none";
+});
