@@ -248,6 +248,11 @@ li a {
   cursor: pointer;
 }
 
+#card2 {
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .cartCardTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;

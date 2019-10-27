@@ -16,7 +16,7 @@ if(tinyButton) {
    })
  };
 
-var colorButton = document.getElementById('colorGrid');
+var colorButton = document.getElementById('colorgrid');
 
 if(colorButton) {
   colorButton.addEventListener('click', function(e){
@@ -32,7 +32,7 @@ if(colorButton) {
  };
 
 var cartText = document.getElementById('cartButton');
-var myCartCount = document.getElementById('cartCount');
+var myCartCount = document.getElementById('cartcount');
 var qtyCount = 0 //parseInt(document.getElementById('qty').value, 1);
 
 if(cartText) {
@@ -50,14 +50,31 @@ if(cartText) {
   }
 }
 
-if(qtyCount > 0) {
-  myCartCount.innerHTML = sessionStorage.getItem(qtyCount);
+if(myCartCount) {
+  myCartCount.innerHTML = sessionStorage.getItem("qtyCount");
 }
 
-var x = document.getElementById("card1");
+if(document.getElementById("card1")) {
+  var x = document.getElementById("card1");
 
-x.addEventListener('click', function(){
-  // alert("11111");
-    console.log(x.parentElement);
-    x.parentElement.parentElement.style.display = "none";
-});
+  x.addEventListener('click', function(){
+    // alert("11111");
+      console.log(x.parentElement);
+      x.parentElement.parentElement.style.display = "none";
+    });
+}
+
+if(document.getElementById("card2")) {
+  var x = document.getElementById("card2");
+  var myCartCount = document.getElementById('cartcount');
+
+  x.addEventListener('click', function(){
+    // alert("11111");
+      console.log(x.parentElement);
+      x.parentElement.parentElement.style.display = "none";
+      console.log(myCartCount)
+      console.log(sessionStorage.getItem("qtyCount"))
+      myCartCount.innerHTML = sessionStorage.getItem("qtyCount")--;
+      sessionStorage.setItem("qtyCount", myCartCount.innerHTML);
+    });
+}
