@@ -16,8 +16,10 @@ if(tinyButton) {
    })
  };
 
+//set variable for color choices on details page
 var colorButton = document.getElementById('colorgrid');
 
+//check for click on color buttons, change styles to highlight
 if(colorButton) {
   colorButton.addEventListener('click', function(e){
        var nodes = colorButton.children;
@@ -31,10 +33,12 @@ if(colorButton) {
    })
  };
 
+//set variables for cart counter
 var cartText = document.getElementById('cartButton');
 var myCartCount = document.getElementById('cartcount');
 var qtyCount = 0 //parseInt(document.getElementById('qty').value, 1);
 
+//update add to cart button on click, change cart counter
 if(cartText) {
 
   function changeCartText(){
@@ -50,31 +54,42 @@ if(cartText) {
   }
 }
 
+//make sure cart counter is consistent across screens
 if(myCartCount) {
   myCartCount.innerHTML = sessionStorage.getItem("qtyCount");
 }
 
+//update cart counter when items are removed from cart
 if(document.getElementById("card1")) {
   var x = document.getElementById("card1");
-
+  var myCartCount = document.getElementById('cartcount');
   x.addEventListener('click', function(){
-    // alert("11111");
-      console.log(x.parentElement);
+
+      var y = parseInt(sessionStorage.getItem("qtyCount"));
+      console.log(y);
+
       x.parentElement.parentElement.style.display = "none";
+
+      myCartCount.innerHTML = y-1;
+      sessionStorage.setItem("qtyCount", myCartCount.innerHTML);
     });
 }
 
 if(document.getElementById("card2")) {
   var x = document.getElementById("card2");
   var myCartCount = document.getElementById('cartcount');
-
   x.addEventListener('click', function(){
-    // alert("11111");
-      console.log(x.parentElement);
+
+      var y = parseInt(sessionStorage.getItem("qtyCount"));
+      console.log(y);
+
       x.parentElement.parentElement.style.display = "none";
-      console.log(myCartCount)
-      console.log(sessionStorage.getItem("qtyCount"))
-      myCartCount.innerHTML = sessionStorage.getItem("qtyCount")--;
+
+      myCartCount.innerHTML = y-1;
       sessionStorage.setItem("qtyCount", myCartCount.innerHTML);
     });
 }
+
+//when adding to cart, check for values when add button is clicked
+//access local storage and store the items
+//check storage later and pull info into cart page

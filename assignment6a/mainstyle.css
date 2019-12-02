@@ -70,10 +70,14 @@ li a {
   border: 2px solid white;
   margin: 10px 0 0 1150px;
   padding: 15px 10px 15px 10px;
+  transition-property: background-color 2s ease;
 }
 
 .buttonlink>a:hover {
-  background-color: rgba(255,255,255,0.2);
+  /*background-color: rgba(255,255,255,0.2);*/
+  background: #444444;
+  transition-duration: 3s;
+
 }
 
 .header {

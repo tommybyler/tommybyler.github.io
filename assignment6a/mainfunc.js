@@ -89,3 +89,7 @@ if(document.getElementById("card2")) {
       sessionStorage.setItem("qtyCount", myCartCount.innerHTML);
     });
 }
+
+//when adding to cart, check for values when add button is clicked
+//access local storage and store the items
+//check storage later and pull info into cart page

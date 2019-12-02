@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+
+  </head>
+
+  <body>
+    <nav class="nav">
+      <!-- <span id="myBtn">Click me</span>
+      <div id="myMenu" class="menu">
+        This is where text goes!
+      </div> -->
+
+      <div id="menuContainer">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- <span id="sidebarBtn">open side menu</span> -->
+      <div id="mySidebar" class="menu"></div>
+      <div id="sidebarTwo" class="menu2"></div>
+      <div id="sidebarThree" class="menu3">
+        <div id="closer" class="closeBtn">CLOSE</div>
+        <h2 class="hamburgerHeader menuHeader">Hamburger Menus</h2>
+        <div class="paragraphHolder">
+          <p class="menuText">Hamburger menus are named for the buttons that activate them, which are themselves named because of their shape's similarity to
+            the food, are a way of hiding a menu while saving space in a crowded interface. The resemblance was likely unintentional, borne of
+            the need for an icon to represent a list of menu items.
+            <br><br>The hamburger icon evolved from an older design
+          </p>
+        </div>
+      </div>
+
+    <div id="dropdownBtn">open bento</div>
+    <div id="myDropdown" class="dropdown">
+      <div class="dropdownHolder">
+      <h2 class="menuHeader">Bento menus</h2>
+      <p class="menuText">Bento menus are named for the bento box appearance of both the icon and the menus contained within. Bento icons show
+        squares arranged in a three-by-three grid to reflect the organization of the items held in their menus. Items are organized in a grid
+        with icons for each. This type of menu saves some space, but requires some specific dimensions because of the more square nature
+        of the organization grid. This type of menu is used less often than hamburger style menus in mobile, but can be seen a bit more
+        in desktop and tablet applications where space is not as limited.
+      </p>
+      </div>
+    </div>
+
+
+    </nav>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <!-- <script src="mainfunc.js"></script> -->
+
+    <script>
+//     $(document).ready(function(){
+//   $("#myBtn").click(function(){
+//      $("#myMenu").slideToggle("slow");
+//
+//   });
+// });
+
+    $(document).ready(function(){
+      $("#menuContainer").click(function(){
+        $("#mySidebar").animate({left: '20px'});
+        $("#sidebarTwo").animate({left: '10px'});
+        $("#sidebarThree").animate({left: '0px'});
+      });
+    });
+
+    $(document).ready(function(){
+      $("#closer").click(function(){
+        $("#mySidebar").animate({left: '-400px'});
+        $("#sidebarTwo").animate({left: '-400px'});
+        $("#sidebarThree").animate({left: '-400px'});
+      });
+    });
+
+    $(document).ready(function(){
+      $("#dropdownBtn").click(function(){
+        $("#myDropdown").slideToggle("slow");
+      });
+    });
+    </script>
+  </body>
+</html>
