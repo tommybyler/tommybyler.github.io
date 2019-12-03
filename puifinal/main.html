@@ -24,34 +24,13 @@ move everything to center -->
   </head>
 
   <body>
-    <nav class="nav">
       <!-- <span id="myBtn">Click me</span>
       <div id="myMenu" class="menu">
         This is where text goes!
       </div> -->
 
-      <div id="menuContainer">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
 
-      <!-- <span id="sidebarBtn">open side menu</span> -->
-      <div id="mySidebar" class="menu"></div>
-      <div id="sidebarTwo" class="menu2"></div>
-      <div id="sidebarThree" class="menu3">
-        <div id="closer" class="closeBtn">CLOSE</div>
-        <h2 class="hamburgerHeader menuHeader">Hamburger Menus</h2>
-        <div class="paragraphHolder">
-          <p class="menuText">Hamburger menus are named for the buttons that activate them, which are themselves named because of their shape's similarity to
-            the food, are a way of hiding a menu while saving space in a crowded interface. The resemblance was likely unintentional, borne of
-            the need for an icon to represent a list of menu items.
-            <br><br>The hamburger icon evolved from an older design
-          </p>
-        </div>
-      </div>
 
-    <div id="dropdownBtn">open bento</div>
     <div id="myDropdown" class="dropdown">
       <div class="dropdownHolder">
       <h2 class="menuHeader">Bento menus</h2>
@@ -63,12 +42,11 @@ move everything to center -->
       </p>
       </div>
     </div>
-    </nav>
 
+    <!-- header text grid -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
-          One of three columns
         </div>
         <div class="col-sm">
           <div class="mainQuestion">
@@ -76,12 +54,10 @@ move everything to center -->
           </div>
         </div>
         <div class="col-sm">
-          One of three columns
         </div>
       </div>
       <div class="row">
         <div class="col-sm">
-          One of three columns
         </div>
         <div class="col-sm">
           <div class="type-wrap">
@@ -89,23 +65,42 @@ move everything to center -->
           </div>
         </div>
         <div class="col-sm">
-          One of three columns
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <!-- <img src="pics/burg.png"> -->
-        </div>
-        <div class="col-sm">
 
-        </div>
-        <div class="col-sm">
-          One of three columns
+      <!-- clickable icons grid -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img class="foodIcon" id="hamburgerOpen" src="pics/burg.png">
+          </div>
+          <div class="col-sm">
+            <img class="foodIcon" src="pics/doner.png">
+          </div>
+          <div class="col-sm">
+            <img class="foodIcon" id="dropdownBtn" src="pics/bento.png">
+          </div>
+          <div class="col-sm">
+            <img class="foodIcon" src="pics/kebab.png">
+          </div>
         </div>
       </div>
     </div>
 
-
+    <!-- <span id="sidebarBtn">open side menu</span> -->
+    <div id="mySidebar" class="menu"></div>
+    <div id="sidebarTwo" class="menu2"></div>
+    <div id="sidebarThree" class="menu3">
+      <div id="closer" class="closeBtn">CLOSE</div>
+      <h2 class="hamburgerHeader menuHeader">Hamburger Menus</h2>
+      <div class="paragraphHolder">
+        <p class="menuText">Hamburger menus are named for the buttons that activate them, which are themselves named because of their shape's similarity to
+          the food, are a way of hiding a menu while saving space in a crowded interface. The resemblance was likely unintentional, borne of
+          the need for an icon to represent a list of menu items.
+          <br><br>The hamburger icon evolved from an older design
+        </p>
+      </div>
+    </div>
 
 
 
@@ -124,7 +119,7 @@ move everything to center -->
 
 
     $(document).ready(function(){
-      $("#menuContainer").click(function(){
+      $("#hamburgerOpen").click(function(){
         $("#mySidebar").animate({left: '20px'});
         $("#sidebarTwo").animate({left: '10px'});
         $("#sidebarThree").animate({left: '0px'});
@@ -146,7 +141,7 @@ move everything to center -->
     });
 
     var typed5 = new Typed('#typed5', {
-      strings: ['hamburger', 'bento', 'döner', 'kebab', 'meatball'],
+      strings: ['hamburger', 'bento', 'döner', 'kebab'],
       typeSpeed: 35,
       backSpeed: 30,
       cursorChar: '',
