@@ -100,6 +100,8 @@ background: #1ce;
   width: 100%;
   background-color: #043740;
   display: none;
+  position: absolute;
+  top: 0;
 }
 
 /* holds dropdown text */
@@ -122,9 +124,13 @@ background: #1ce;
 
 }
 
+.mainGrid {
+  margin-top: 10%;
+}
+
 .row {
   height: 95px;
-  align: center;
+  text-align: center;
 }
 
 .foodIcon {
