@@ -113,3 +113,19 @@ background: #1ce;
   margin-left: 400px;
   margin-top: 40px;
 }
+
+.headText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.mainQuestion {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 70px;
+
+}
+
+.container {
+  width: 100%;
+}

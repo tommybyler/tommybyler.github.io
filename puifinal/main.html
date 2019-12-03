@@ -1,3 +1,7 @@
+<!-- to do
+use type.js for header ("bento, hamburger, doner, kebab, meatball")
+move everything to center -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +14,9 @@
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- typed css -->
+    <!-- <link href="typed/demos.css" rel="stylesheet"/> -->
 
     <title>Hello, world!</title>
 
@@ -56,10 +63,36 @@
       </p>
       </div>
     </div>
-
-
     </nav>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm-auto">
+          <div class="mainQuestion">
+          What's on the menu?
+          </div>
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          <div class="type-wrap">
+          <span id="typed5" class="headText" style="white-space:pre;"></span>
+          </div>
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+    </div>
 
 
 
@@ -72,14 +105,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- My JS -->
     <!-- <script src="mainfunc.js"></script> -->
+    <!-- typed.js -->
+    <script src="typed/typed.js" type="text/javascript"></script>
+    <script src="typed/demos.js"></script>
 
     <script>
-//     $(document).ready(function(){
-//   $("#myBtn").click(function(){
-//      $("#myMenu").slideToggle("slow");
-//
-//   });
-// });
+
 
     $(document).ready(function(){
       $("#menuContainer").click(function(){
@@ -101,6 +132,16 @@
       $("#dropdownBtn").click(function(){
         $("#myDropdown").slideToggle("slow");
       });
+    });
+
+    var typed5 = new Typed('#typed5', {
+      strings: ['hamburger', 'bento', 'doner', 'kebab', 'meatball'],
+      typeSpeed: 35,
+      backSpeed: 30,
+      cursorChar: '',
+      shuffle: true,
+      smartBackspace: false,
+      loop: true
     });
     </script>
   </body>
