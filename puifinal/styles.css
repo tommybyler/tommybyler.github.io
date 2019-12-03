@@ -56,6 +56,7 @@
   height: 100%;
   position: absolute;
   left: -400px;
+  top: 0;
 }
 
 .menu {
@@ -100,6 +101,7 @@ background: #1ce;
   width: 100%;
   background-color: #043740;
   display: none;
+  float: left;
   position: absolute;
   top: 0;
 }
@@ -107,7 +109,7 @@ background: #1ce;
 /* holds dropdown text */
 .dropdownHolder {
   width: 40%;
-  margin-left: 400px;
+  margin-left: 20%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
