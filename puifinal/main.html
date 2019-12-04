@@ -60,7 +60,7 @@ move everything to center -->
         </div>
         <div class="col-sm">
           <div class="type-wrap">
-          <span id="typed5" class="headText" style="white-space:pre;">.</span>
+          <span id="typed5" class="headText" style="white-space:pre;"></span>
           </div>
         </div>
         <div class="col-sm">
@@ -86,8 +86,6 @@ move everything to center -->
       </div>
     </div>
 
-
-
     <!-- <span id="sidebarBtn">open side menu</span> -->
     <div id="mySidebar" class="menu"></div>
     <div id="sidebarTwo" class="menu2"></div>
@@ -104,52 +102,18 @@ move everything to center -->
     </div>
 
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- My JS -->
-    <!-- <script src="mainfunc.js"></script> -->
+
     <!-- typed.js -->
     <script src="typed/typed.js" type="text/javascript"></script>
     <script src="typed/demos.js"></script>
 
-    <script>
+    <!-- My JS -->
+    <script src="mainfunc.js"></script>
 
-
-    $(document).ready(function(){
-      $("#hamburgerOpen").click(function(){
-        $("#mySidebar").animate({left: '20px'});
-        $("#sidebarTwo").animate({left: '10px'});
-        $("#sidebarThree").animate({left: '0px'});
-      });
-    });
-
-    $(document).ready(function(){
-      $("#closer").click(function(){
-        $("#mySidebar").animate({left: '-400px'});
-        $("#sidebarTwo").animate({left: '-400px'});
-        $("#sidebarThree").animate({left: '-400px'});
-      });
-    });
-
-    $(document).ready(function(){
-      $("#dropdownBtn").click(function(){
-        $("#myDropdown").slideToggle("slow");
-      });
-    });
-
-    var typed5 = new Typed('#typed5', {
-      strings: ['hamburger', 'bento', 'döner', 'kebab'],
-      typeSpeed: 35,
-      backSpeed: 30,
-      cursorChar: '__',
-      shuffle: true,
-      smartBackspace: false,
-      loop: true
-    });
-    </script>
   </body>
 </html>

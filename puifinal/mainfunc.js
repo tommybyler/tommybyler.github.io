@@ -1,23 +1,31 @@
-Array.from(document.getElementsByTagName('path')).map(path => {
-  console.log(path.getTotalLength());
-  const debugPath = path.cloneNode();
-  debugPath.classList.add('line--debug');
-  if (path.parentNode) path.parentNode.insertBefore(debugPath.cloneNode(), path);
+$(document).ready(function(){
+  $("#hamburgerOpen").click(function(){
+    $("#mySidebar").animate({left: '20px'});
+    $("#sidebarTwo").animate({left: '10px'});
+    $("#sidebarThree").animate({left: '0px'});
+  });
 });
-const debugCheckbox = document.getElementById('debug');
-debugCheckbox.addEventListener('change', () => {
-  if (debugCheckbox.checked) {
-    debugCheckbox.parentElement.classList.add('active');
-  } else {
-    debugCheckbox.parentElement.classList.remove('active');
-  }
+
+$(document).ready(function(){
+  $("#closer").click(function(){
+    $("#mySidebar").animate({left: '-400px'});
+    $("#sidebarTwo").animate({left: '-400px'});
+    $("#sidebarThree").animate({left: '-400px'});
+  });
 });
-let currentActive = 0;
-const checkboxes = document.querySelectorAll('.grid input');
-const autoShow = setInterval(() => {
-  checkboxes[currentActive % 4].checked = !checkboxes[currentActive % 4].checked;
-  if (!checkboxes[currentActive % 4].checked) currentActive += 1;
-}, 1000);
-document.querySelector('.grid').addEventListener('click', () => {
-  clearInterval(autoShow);
-})
+
+$(document).ready(function(){
+  $("#dropdownBtn").click(function(){
+    $("#myDropdown").slideToggle("slow");
+  });
+});
+
+var typed5 = new Typed('#typed5', {
+  strings: ['hamburger', 'bento', 'döner', 'kebab'],
+  typeSpeed: 35,
+  backSpeed: 30,
+  cursorChar: '__',
+  shuffle: true,
+  smartBackspace: false,
+  loop: true
+});
