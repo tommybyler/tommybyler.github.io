@@ -2,6 +2,10 @@
   border: 1px solid red;
 } */
 
+body {
+  background: #1ce;
+}
+
 /* set slide out menu header style */
 .hamburgerHeader {
   /* font-family: 'Poppins', sans-serif;
@@ -109,7 +113,7 @@ background: #1ce;
 /* holds dropdown text */
 .dropdownHolder {
   width: 40%;
-  margin-left: 20%;
+  margin-left: 27%;
 }
 
 .headText {
