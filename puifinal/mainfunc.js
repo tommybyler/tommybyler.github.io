@@ -1,18 +1,22 @@
-$(document).ready(function(){
-  $("#hamburgerOpen").click(function(){
-    $("#mySidebar").animate({left: '20px'});
-    $("#sidebarTwo").animate({left: '10px'});
-    $("#sidebarThree").animate({left: '0px'});
+var hamburgOpen = false
+if (hamburgOpen == false) {
+  var hamburgOpen = true;
+  $(document).ready(function(){
+    $("#hamburgerOpen").click(function(){
+      $("#mySidebar").animate({left: '20px'});
+      $("#sidebarTwo").animate({left: '10px'});
+      $("#sidebarThree").animate({left: '0px'});
+    });
   });
-});
-
-$(document).ready(function(){
-  $("#closer").click(function(){
-    $("#mySidebar").animate({left: '-400px'});
-    $("#sidebarTwo").animate({left: '-400px'});
-    $("#sidebarThree").animate({left: '-400px'});
+} else {
+  $(document).ready(function(){
+    $(".burgCloser").click(function(){
+      $("#mySidebar").animate({left: '-400px'});
+      $("#sidebarTwo").animate({left: '-400px'});
+      $("#sidebarThree").animate({left: '-400px'});
+    });
   });
-});
+}
 
 $(document).ready(function(){
   $("#dropdownBtn").click(function(){

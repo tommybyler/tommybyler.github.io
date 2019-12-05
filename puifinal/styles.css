@@ -29,7 +29,7 @@ body {
 /* set style for div holding p text */
 .paragraphHolder {
   width: 300px;
-  margin-left: 40px;
+  margin-left: 10%;
 }
 
 /* set style for actual paragraph text */
@@ -84,7 +84,8 @@ background: #1ce;
   position: absolute;
   left: -400px; */
 }
-.closeBtn {
+
+/* .closeBtn {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   display: inline;
@@ -99,6 +100,12 @@ background: #1ce;
 .closeBtn:hover {
   opacity: 1;
   font-weight: 500;
+} */
+
+.burgIcon {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 7%;
 }
 
 /* actual dropdown area */
