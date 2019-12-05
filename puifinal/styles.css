@@ -55,6 +55,7 @@ body {
   transition: 0.4s;
 } */
 
+/* overall hamburger menu styling */
 .menu, .menu2, .menu3 {
   height: 200px;
   width: 400px;
@@ -64,48 +65,44 @@ body {
   top: 0;
 }
 
+/* specific background colors */
 .menu {
-background: #1ce;
+  background: #1ce;
 }
 
 .menu2 {
   background: #096E80;
-  /* height: 200px;
-  width: 400px;
-  height: 100%;
-  position: absolute;
-  left: -400px; */
-}
-.menu3 {
-  background: #043740;
-  /* height: 200px;
-  width: 400px;
-  height: 100%;
-  position: absolute;
-  left: -400px; */
 }
 
-/* .closeBtn {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-  display: inline;
-  color: white;
-  cursor: pointer;
-  opacity: .5;
-  transition: .3s;
-  position: relative;
-  left: 15px;
-  top: 12px;
+.menu3 {
+  background: #043740;
 }
-.closeBtn:hover {
-  opacity: 1;
-  font-weight: 500;
-} */
 
 .burgIcon {
   margin-top: 15%;
   margin-left: 10%;
   margin-bottom: 7%;
+}
+
+.kebabPanel, .kebabPanelTwo, .kebabPanelThree {
+  left: 100%;
+  height: 200px;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.kebabPanel {
+  background-color: #1ce;
+}
+
+.kebabPanelTwo {
+  background: #096E80;
+}
+
+.kebabPanelThree {
+  background: #043740;
 }
 
 /* actual dropdown area */

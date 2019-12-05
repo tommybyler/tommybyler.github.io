@@ -1,22 +1,45 @@
 var hamburgOpen = false
-if (hamburgOpen == false) {
-  var hamburgOpen = true;
-  $(document).ready(function(){
-    $("#hamburgerOpen").click(function(){
+var kebabOpen = false
+
+// open/close hamburger menu on left
+$(document).ready(function(){
+  $("#hamburgerOpen").click(function(){
+    // if hamburgOpen == false (menu is closed)
+    if (hamburgOpen == false) {
+      // open menu & set hamburgOpen to true
+      hamburgOpen = true;
       $("#mySidebar").animate({left: '20px'});
       $("#sidebarTwo").animate({left: '10px'});
       $("#sidebarThree").animate({left: '0px'});
-    });
-  });
-} else {
-  $(document).ready(function(){
-    $(".burgCloser").click(function(){
+    } else {
+      // else close menu & set hamburgOpen to false
+      hamburgOpen = false;
       $("#mySidebar").animate({left: '-400px'});
       $("#sidebarTwo").animate({left: '-400px'});
       $("#sidebarThree").animate({left: '-400px'});
-    });
+    }
   });
-}
+});
+
+// open/close kebab menu on right
+$(document).ready(function(){
+  $("#kebabOpen").click(function(){
+    // if kebabOpen == false (menu is closed)
+    if (kebabOpen == false) {
+      // then open menu & set kebabOpen to true
+      kebabOpen = true;
+      $("#kebabMenu").animate({left: '-420px'});
+      $("#kebabMenuTwo").animate({left: '-410px'});
+      $("#kebabMenuThree").animate({left: '-400px'});
+    } else {
+      // else close menu & set kebabOpen to false
+      kebabOpen = false;
+      $("#kebabMenu").animate({right: '400px'});
+      $("#kebabMenuTwo").animate({right: '400px'});
+      $("#kebabMenuThree").animate({right: '400px'});
+    }
+  });
+});
 
 $(document).ready(function(){
   $("#dropdownBtn").click(function(){
