@@ -28,15 +28,15 @@ $(document).ready(function(){
     if (kebabOpen == false) {
       // then open menu & set kebabOpen to true
       kebabOpen = true;
-      $("#kebabMenu").animate({left: '-420px'});
-      $("#kebabMenuTwo").animate({left: '-410px'});
-      $("#kebabMenuThree").animate({left: '-400px'});
+      $("#kebabMenu").animate({left: '80vw'});
+      $("#kebabMenuTwo").animate({left: '80.5vw'});
+      $("#kebabMenuThree").animate({left: '81vw'});
     } else {
       // else close menu & set kebabOpen to false
       kebabOpen = false;
-      $("#kebabMenu").animate({right: '400px'});
-      $("#kebabMenuTwo").animate({right: '400px'});
-      $("#kebabMenuThree").animate({right: '400px'});
+      $("#kebabMenu").animate({left: '100%'});
+      $("#kebabMenuTwo").animate({left: '100%'});
+      $("#kebabMenuThree").animate({left: '100%'});
     }
   });
 });

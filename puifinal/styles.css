@@ -4,15 +4,11 @@
 
 body {
   background: #1ce;
+  overflow: hidden;
 }
 
 /* set slide out menu header style */
 .hamburgerHeader {
-  /* font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  text-transform: uppercase; */
   margin-top: 40px;
   margin-left: 40px;
 }
@@ -41,20 +37,6 @@ body {
   text-align: left;
 }
 
-/* set style for hamburger menu */
-/* #menuContainer {
-  cursor: pointer;
-} */
-
-/* hamburger menu bars */
-/* .bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-} */
-
 /* overall hamburger menu styling */
 .menu, .menu2, .menu3 {
   height: 200px;
@@ -65,7 +47,7 @@ body {
   top: 0;
 }
 
-/* specific background colors */
+/* hamburger panel specific background colors */
 .menu {
   background: #1ce;
 }
@@ -78,12 +60,14 @@ body {
   background: #043740;
 }
 
+/* hamburger icon specific styles */
 .burgIcon {
   margin-top: 15%;
   margin-left: 10%;
   margin-bottom: 7%;
 }
 
+/* kebab panels common styles */
 .kebabPanel, .kebabPanelTwo, .kebabPanelThree {
   left: 100%;
   height: 200px;
@@ -93,6 +77,7 @@ body {
   top: 0;
 }
 
+/* kebab panels specifics */
 .kebabPanel {
   background-color: #1ce;
 }
@@ -103,6 +88,12 @@ body {
 
 .kebabPanelThree {
   background: #043740;
+}
+
+.kebabIcon {
+  margin-top: 13%;
+  margin-left: 10%;
+  margin-bottom: 5%;
 }
 
 /* actual dropdown area */
