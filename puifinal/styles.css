@@ -119,8 +119,15 @@ background: #1ce;
 
 /* holds dropdown text */
 .dropdownHolder {
-  width: 40%;
-  margin-left: 27%;
+  width: 30%;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+.bentoicon {
+  float: left;
+  margin-left: 25%;
+  margin-top: 3%;
 }
 
 .headText {
