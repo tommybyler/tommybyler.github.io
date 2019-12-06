@@ -214,7 +214,8 @@ li a {
   grid-column: 2;
 }
 
-/*set grid for cart items*/
+/*cart page
+set grid for cart items*/
 .cartGrid {
   height: auto;
   width: 80%;
