@@ -1,0 +1,159 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  background: #1ce;
+  overflow: hidden;
+}
+
+/* header text style */
+.mainQuestion {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 70px;
+}
+
+/* typed.js style */
+.headText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+/* main page food icon style */
+.foodIcon {
+  height: 120px;
+  padding-left: 20%;
+  padding-right: 10%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+/* food icon hover transform */
+.foodIcon:hover {
+  transform: scale(1.2)
+}
+
+/* set grid spacing */
+.mainGrid {
+  margin-top: 10%;
+}
+
+/* row style */
+.row {
+  height: 95px;
+  text-align: center;
+}
+
+/* set slide out menu header style */
+.hamburgerHeader {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/* set menu header text style */
+.menuHeader {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* set style for div holding p text */
+.paragraphHolder {
+  width: 300px;
+  margin-left: 10%;
+}
+
+/* set style for actual paragraph text */
+.menuText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+}
+
+/* overall hamburger menu styling */
+.menu, .menu2, .menu3 {
+  height: 200px;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  left: -400px;
+  top: 0;
+}
+
+/* hamburger panel specific background colors */
+.menu {
+  background: #1ce;
+}
+
+.menu2 {
+  background: #096E80;
+}
+
+.menu3 {
+  background: #043740;
+}
+
+/* hamburger icon specific styles */
+.burgIcon {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 7%;
+}
+
+/* kebab panels common styles */
+.kebabPanel, .kebabPanelTwo, .kebabPanelThree {
+  left: 100%;
+  height: 200px;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* kebab panels specifics */
+.kebabPanel {
+  background-color: #1ce;
+}
+
+.kebabPanelTwo {
+  background: #096E80;
+}
+
+.kebabPanelThree {
+  background: #043740;
+}
+
+/* in menu kebab icon style */
+.kebabIcon {
+  margin-top: 13%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+/* actual dropdown area */
+.dropdown {
+  width: 100%;
+  background-color: #043740;
+  display: none;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* holds dropdown text */
+.dropdownHolder {
+  width: 30%;
+  margin-left: 4%;
+  display: inline-block;
+}
+
+/* in menu bento/doner icon styles */
+.bentoicon, .donericon {
+  float: left;
+  margin-left: 25%;
+  margin-top: 3%;
+}
