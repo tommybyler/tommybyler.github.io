@@ -1,6 +1,6 @@
- * {
+ /* * {
   border: 1px solid red;
-}
+} */
 
 body {
   background: #1ce;
@@ -141,7 +141,7 @@ body {
   background-color: #043740;
   display: none;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
 /* holds dropdown text */
