@@ -112,7 +112,7 @@ body {
   display: inline-block;
 }
 
-.bentoicon {
+.bentoicon, .donericon {
   float: left;
   margin-left: 25%;
   margin-top: 3%;
