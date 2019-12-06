@@ -7,6 +7,44 @@ body {
   overflow: hidden;
 }
 
+/* header text style */
+.mainQuestion {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 70px;
+}
+
+/* typed.js style */
+.headText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+/* main page food icon style */
+.foodIcon {
+  height: 120px;
+  padding-left: 20%;
+  padding-right: 10%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+/* food icon hover transform */
+.foodIcon:hover {
+  transform: scale(1.2)
+}
+
+/* set grid spacing */
+.mainGrid {
+  margin-top: 10%;
+}
+
+/* row style */
+.row {
+  height: 95px;
+  text-align: center;
+}
+
 /* set slide out menu header style */
 .hamburgerHeader {
   margin-top: 40px;
@@ -90,6 +128,7 @@ body {
   background: #043740;
 }
 
+/* in menu kebab icon style */
 .kebabIcon {
   margin-top: 13%;
   margin-left: 10%;
@@ -112,41 +151,9 @@ body {
   display: inline-block;
 }
 
+/* in menu bento/doner icon styles */
 .bentoicon, .donericon {
   float: left;
   margin-left: 25%;
   margin-top: 3%;
-}
-
-.headText {
-  font-family: 'Poppins', sans-serif;
-  font-size: 40px;
-  font-weight: 200;
-}
-
-.mainQuestion {
-  font-family: 'Staatliches', sans-serif;
-  font-size: 70px;
-
-}
-
-.mainGrid {
-  margin-top: 10%;
-}
-
-.row {
-  height: 95px;
-  text-align: center;
-}
-
-.foodIcon {
-  height: 120px;
-  padding-left: 20%;
-  padding-right: 10%;
-  transition: transform .2s;
-  cursor: pointer;
-}
-
-.foodIcon:hover {
-  transform: scale(1.2)
 }

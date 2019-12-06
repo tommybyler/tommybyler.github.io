@@ -1,8 +1,6 @@
-<!-- to do
- -->
-
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <!-- typed css -->
@@ -19,49 +17,50 @@
 
     <title>What's on the Menu?</title>
 
-
   </head>
 
   <body>
-      <!-- <span id="myBtn">Click me</span>
-      <div id="myMenu" class="menu">
-        This is where text goes!
-      </div> -->
 
-    <!-- dropdown menu middle 1 -->
+    <!-- bento dropdown menu -->
     <div id="bentoDropdown" class="dropdown">
-      <img class="bentoicon" src="pics/bentoicon.png">
+      <!-- bento icon -->
+      <img class="bentoicon" src="assets/pics/bentoicon.png">
       <div class="dropdownHolder">
-      <h2 class="menuHeader">Bento menus</h2>
-      <p class="menuText">Bento menus are named for the bento box appearance of both the icon and the menus contained within. Bento icons show
-        squares arranged in a three-by-three grid to reflect the organization of the items in these menus. Items are organized in a grid
-        with icons for each. This type of menu saves some space, but requires some specific dimensions because of the more square nature
-        of the organization grid. This type of menu is used less often than hamburger style menus in mobile, but can be seen a bit more
-        in desktop and tablet applications where space is not as limited.
-      </p>
+        <!-- bento header + text -->
+        <h2 class="menuHeader">Bento menus</h2>
+        <p class="menuText">Bento menus are named for the bento box appearance of both the icon and the menus contained within. Bento icons show
+          squares arranged in a three-by-three grid to reflect the organization of the items in these menus. Items are organized in a grid
+          with icons for each. This type of menu saves some space, but requires some specific dimensions because of the more square nature
+          of the organization grid. This type of menu is used less often than hamburger style menus in mobile, but can be seen a bit more
+          in desktop and tablet applications where space is not as limited.
+        </p>
       </div>
     </div>
 
+    <!-- doner dropdown menu -->
     <div id="donerDropdown" class="dropdown">
-      <img class="donericon" src="pics/donericon.png">
+      <!-- doner icon -->
+      <img class="donericon" src="assets/pics/donericon.png">
       <div class="dropdownHolder">
-      <h2 class="menuHeader">Döner menus</h2>
-      <p class="menuText">The Döner menu is named for the inverted cone-shaped icon, reminiscent of döner
-        kebab, which involves cooking meat on a vertical rotisserie next to a heating element and shaving
-        off slices as the meat cooks.
-        <br><br>The icon itself is used to indicate a filter; similar to a hamburger menu, the lines
-        indicate a list, and the inverted cone shape indicates a shrinking set of information. These menus are
-        utilized in mobile, tablet, and desktop sizes as they are not used specifically to save space.
-      </p>
+        <!-- doner header + text -->
+        <h2 class="menuHeader">Döner menus</h2>
+        <p class="menuText">The Döner menu is named for the inverted cone-shaped icon, reminiscent of döner
+          kebab, which involves cooking meat on a vertical rotisserie next to a heating element and shaving
+          off slices as the meat cooks.
+          <br><br>The icon itself is used to indicate a filter; similar to a hamburger menu, the lines
+          indicate a list, and the inverted cone shape indicates a shrinking set of information. These menus are
+          utilized in mobile, tablet, and desktop sizes as they are not used specifically to save space.
+        </p>
       </div>
     </div>
 
-    <!-- header text grid -->
+    <!-- header text + typed.js grid -->
     <div class="container-fluid mainGrid">
       <div class="row">
         <div class="col-sm">
         </div>
         <div class="col-sm">
+          <!-- header question -->
           <div class="mainQuestion">
           What's on the menu?
           </div>
@@ -73,6 +72,7 @@
         <div class="col-sm">
         </div>
         <div class="col-sm">
+          <!-- typed.js -->
           <div class="type-wrap">
           <span id="typed5" class="headText" style="white-space:pre;"></span>
           </div>
@@ -85,16 +85,20 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img class="foodIcon" id="hamburgerOpen" src="pics/burg.png">
+            <!-- hamburger -->
+            <img class="foodIcon" id="hamburgerOpen" src="assets/pics/burg.png">
           </div>
           <div class="col-sm">
-            <img class="foodIcon" id="donerBtn" src="pics/doner.png">
+            <!-- doner -->
+            <img class="foodIcon" id="donerBtn" src="assets/pics/doner.png">
           </div>
           <div class="col-sm">
-            <img class="foodIcon" id="bentoBtn" src="pics/bento.png">
+            <!-- bento -->
+            <img class="foodIcon" id="bentoBtn" src="assets/pics/bento.png">
           </div>
           <div class="col-sm">
-            <img class="foodIcon" id="kebabOpen" src="pics/kebab.png">
+            <!-- kebab -->
+            <img class="foodIcon" id="kebabOpen" src="assets/pics/kebab.png">
           </div>
         </div>
       </div>
@@ -104,7 +108,9 @@
     <div id="mySidebar" class="menu"></div>
     <div id="sidebarTwo" class="menu2"></div>
     <div id="sidebarThree" class="menu3">
-      <img class="burgIcon" src="pics/burgicon.png">
+      <!-- burger icon -->
+      <img class="burgIcon" src="assets/pics/burgicon.png">
+      <!-- burger header + text -->
       <h2 class="hamburgerHeader menuHeader">Hamburger Menus</h2>
       <div class="paragraphHolder">
         <p class="menuText">Hamburger menus are named for the buttons that activate them, which are themselves named because of their shape's similarity to
@@ -120,7 +126,9 @@
     <div id="kebabMenu" class="kebabPanel"></div>
     <div id="kebabMenuTwo" class="kebabPanelTwo"></div>
     <div id="kebabMenuThree" class="kebabPanelThree">
-      <img class="kebabIcon" src="pics/kebabicon.png">
+      <!-- kebab icon -->
+      <img class="kebabIcon" src="assets/pics/kebabicon.png">
+      <!-- kebab header + text -->
       <h2 class="hamburgerHeader menuHeader">Kebab Menus</h2>
       <div class="paragraphHolder">
         <p class="menuText">Kebab menu icons are named for the resemblance to what is colloquially referred to as
@@ -142,11 +150,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- typed.js -->
-    <script src="typed/typed.js" type="text/javascript"></script>
-    <script src="typed/demos.js"></script>
+    <script src="assets/typed/typed.js" type="text/javascript"></script>
+    <script src="assets/typed/demos.js"></script>
 
     <!-- My JS -->
-    <script src="mainfunc.js"></script>
+    <script src="assets/javascript/mainfunc.js"></script>
 
   </body>
 </html>
