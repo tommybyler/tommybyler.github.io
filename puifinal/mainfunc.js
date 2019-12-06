@@ -42,10 +42,40 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#dropdownBtn").click(function(){
-    $("#myDropdown").slideToggle("slow");
+  $("#bentoBtn").click(function(){
+    console.log($("#donerDropdown").is(':visible'));
+    $("#bentoDropdown").slideToggle("slow");
+    if ($("#donerDropdown").is(':visible')) {
+      $("#donerDropdown").slideToggle("slow");
+    }
   });
 });
+
+$(document).ready(function(){
+  $("#donerBtn").click(function(){
+    $("#donerDropdown").slideToggle("slow");
+    if ($("#bentoDropdown").is(':visible')) {
+      $("#bentoDropdown").slideToggle("slow");
+    }
+  });
+});
+
+// on bentoBtn click
+//   if donerDropdown is visible
+//     toggle donerDropdown
+//   toggle bentoDropdown
+//
+// $(document).ready(function(){
+//   $("#dropdownBtn").click(function(){
+//     $("#myDropdown").slideToggle("slow");
+//   });
+// });
+//
+// $(document).ready(function(){
+//   $("#dropdownBtn").click(function(){
+//     $("#myDropdown").slideToggle("slow");
+//   });
+// });
 
 var typed5 = new Typed('#typed5', {
   strings: ['hamburger', 'bento', 'döner', 'kebab'],
